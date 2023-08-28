@@ -20,3 +20,25 @@ for (let i = 0; i < array.length; i++) {
 }
 
 console.log(array);
+
+
+// Tai su dụng hàm trong JS
+
+function timGiaTriLonNhat(arr) {
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+      if (arr[i] > max) {
+        max = arr[i];
+      }
+    }
+    return max;
+  }
+  
+  const mangA = [5, 12, 8, 25, 3];
+  const mangB = [100, 200, 150, 75];
+  
+  const maxA = timGiaTriLonNhat(mangA);
+  console.log("Giá trị lớn nhất trong mảng A:", maxA);
+  
+  const maxB = timGiaTriLonNhat(mangB);
+  console.log("Giá trị lớn nhất trong mảng B:", maxB);
